@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dashback"
+    tools:context="com.example.abhishek.authentication.MainActivity">
+
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:id="@+id/main_pb"
+    android:visibility="gone"/>
+<android.support.v7.widget.CardView
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_marginTop="120dp"
+    android:layout_centerHorizontal="true"
+    app:cardBackgroundColor="@color/rvblue"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:text="SIGN UP"
+        android:id="@+id/tup"
+        android:onClick="signup"
+        android:textColor="@color/cback"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:background="@color/cback"
+        android:id="@+id/v1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="@color/rvblue"
+        android:layout_marginTop="220dp"
+        android:textSize="30sp"
+        android:id="@+id/tsin"
+        android:layout_marginStart="20dp"
+        android:onClick="login"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/r1">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email "
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:layout_marginEnd="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cback"
+            android:layout_below="@id/email"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/email"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cback"
+            android:layout_below="@id/pass"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"/>
+    <Button
+        android:id="@+id/btup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:onClick="createnew"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/nyb1"
+        android:textColor="@color/rvblue"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/r2">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/cback"
+            />
+    <EditText
+        android:id="@+id/inname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:hint="Email    "
+        android:textColor="@color/rvblue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/rvblue"
+            android:layout_below="@id/inname"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"/>
+    <EditText
+        android:id="@+id/inpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password  "
+        android:inputType="textPassword"
+        android:textColor="@color/rvblue"
+        android:layout_below="@+id/inname"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:background="@null"
+        android:layout_marginTop="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/rvblue"
+            android:layout_below="@id/inpass"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"/>
+    <Button
+        android:id="@+id/inbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:onClick="signin"
+        android:background="@drawable/mb2"
+        android:textColor="@color/dashback"
+        android:layout_below="@+id/inpass"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/r3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE USERNAME"
+            android:textSize="30dp"
+            android:layout_gravity="end"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/dashback"
+            android:id="@+id/t3"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter username"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="140dp"
+            android:id="@+id/usern"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/usern"
+            android:background="@color/cback"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:id="@+id/ubt"
+            android:layout_below="@+id/usern"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/nyb1"
+            android:textColor="@color/rvblue"
+            android:layout_marginTop="10dp"
+            android:onClick="check"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+</RelativeLayout>

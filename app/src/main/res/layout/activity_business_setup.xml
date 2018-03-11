@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dashback"
+    tools:context="com.example.abhishek.authentication.Business_setup">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="0dp"
+        android:paddingEnd="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employees"
+            android:id="@+id/em"
+            android:textAllCaps="true"
+            android:textColor="@color/cback"
+            android:textSize="30dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:layout_marginTop="70dp"
+    >
+         <LinearLayout
+                android:id="@+id/llayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/usr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:background="@null"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"/>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginEnd="20dp"
+               android:background="@color/dashback" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fno1"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:hint="No."/>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginEnd="20dp"
+               android:background="@color/dashback" />
+            <EditText
+                android:id="@+id/usr2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:background="@null"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"/>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginEnd="20dp"
+               android:background="@color/dashback" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fno2"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:layout_marginTop="15dp"
+                android:hint="No."/>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginEnd="20dp"
+               android:background="@color/dashback" />
+            <Button
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More +"
+                android:onClick="more_user"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/myb"
+                android:textColor="@color/cardview_light_background"/>
+           <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/myb"
+                android:textColor="@color/cardview_light_background"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:text="store"
+                android:onClick="store"/>
+
+           </LinearLayout>
+</ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:background="@color/cback"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Functions"
+            android:textAllCaps="true"
+            android:id="@+id/fn"
+            android:textColor="@color/cback"
+            android:textSize="30dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:layout_marginTop="70dp"
+    android:id="@+id/sv1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Function 1"
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/f1"/>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/f1"
+                android:background="@color/dashback" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Function 2"
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/f1"
+                android:layout_marginTop="15dp"
+                android:id="@+id/f2"/>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/f2"
+                android:background="@color/dashback" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f2"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/myb"
+                android:layout_marginEnd="20dp"
+                android:text="Create"
+                android:textColor="@color/cardview_light_background"
+                android:id="@+id/ct"
+                android:onClick="createf"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More"
+                android:layout_below="@+id/ct"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/myb"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/m"
+                android:textColor="@color/cardview_light_background"
+                android:onClick="moref"/>
+        </RelativeLayout>
+</ScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:textAllCaps="true"
+            android:textColor="@color/dashback"
+            android:textSize="30sp"
+            android:layout_gravity="end"
+            android:id="@+id/st"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rlc">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Business name"
+                android:id="@+id/bname"
+                android:layout_marginEnd="20dp"
+                android:background="@null"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="140dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/dashback"
+                android:layout_below="@+id/bname"/>
+            <Button
+                android:id="@+id/ent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enter"
+                android:background="@drawable/myb"
+                android:textColor="@color/cardview_light_background"
+                android:onClick="f_launch"
+                android:layout_below="@+id/bname"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>
